@@ -1,0 +1,79 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "background session",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7040158000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user in homepage",
+            "match": {
+              "location": "test1.user_in_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-27T08:07:10.175Z",
+        "line": 12,
+        "name": "login",
+        "description": "",
+        "id": "mail;login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 152102300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter the valid username\"admin\" and password \"Admin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Admin@123\"",
+                  "offset": 50
+                }
+              ],
+              "location": "test1.user_enter_the_valid_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1423459200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click the login",
+            "match": {
+              "location": "test1.user_click_the_login()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "mail",
+    "description": "",
+    "id": "mail",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/feature/jira.feature",
+    "tags": []
+  }
+]
