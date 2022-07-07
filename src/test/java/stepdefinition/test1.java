@@ -26,6 +26,23 @@ public class test1 {
 	@Then("user click the login")
 	public void user_click_the_login() {
 		driver.findElement(By.tagName("button")).click();
-	}
+	}	
+		@When("user enter the valid usernames{string} and password {string}")
+		public void user_enter_the_valid_usernames_and_password(String user2, String pass2) {
+			driver.findElement(By.name("username")).sendKeys(user2);
+		    driver.findElement(By.name("password")).sendKeys(pass2);
+		}
 
+		@Then("user clicks the login")
+		public void user_clicks_the_login() {
+			driver.findElement(By.tagName("button")).click();
+		}
+
+
+	
+	@Then("click on catalog")
+	public void click_on_catalog() {
+		driver.findElement(By.id("catalog")).click();
+		driver.findElement(By.xpath("//i[@class='active open']")).click();
+	}
 } 
